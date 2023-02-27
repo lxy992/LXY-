@@ -1,0 +1,8 @@
+---- uiSetPressureValue Matches (7 in 5 files) ----
+DWIN_MessageHandle in bsp_dwin.c (User\src) : 					SystemParams.uiSetPressureValue = bar_grade*10;
+{anonSystemParams_t} in bsp_function.h (User\inc) :         u16  uiSetPressureValue;        /**设置气压值**/
+LEFT_HAND_MessageHandle in bsp_left_hand.c (User\src) : 				   SystemParams.uiSetPressureValue = bar_grade*10; 
+Pressure_PIDInit in bsp_pressure.c (User\src) : 	sptr->SetValue = SystemParams.uiSetPressureValue;   
+Pressure_Handle in bsp_pressure.c (User\src) : 		if(SystemParams.uiSetPressureValue == 0) 
+Pressure_Handle in bsp_pressure.c (User\src) : 	        if(SystemParams.uiMasterPressure>=(SystemParams.uiSetPressureValue+5))
+RIGHT_HAND_MessageHandle in bsp_right_hand.c (User\src) : 					SystemParams.uiSetPressureValue = bar_grade*10;

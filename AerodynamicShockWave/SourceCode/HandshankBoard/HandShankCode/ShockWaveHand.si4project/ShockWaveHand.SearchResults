@@ -1,0 +1,6 @@
+---- Flag.MainBoardPower Matches (5 in 4 files) ----
+Key_All_Serve in key.c (User\src) :     if(FALSE == Flag.MainBoardPower) return;
+Protocol_DealOrder in protocol.c (User\src) :                 Flag.MainBoardPower = TRUE;
+Protocol_DealOrder in protocol.c (User\src) :                 Flag.MainBoardPower = FALSE;
+Paremeter_Init in sys.c (User\src) :     Flag.MainBoardPower = FALSE;
+{anonFlag_StructType} in sys.h (User\inc) : 	BOOL MainBoardPower;
